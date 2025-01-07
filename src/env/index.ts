@@ -9,4 +9,5 @@ export const env_entorno = {
   user: process.env.MYSQL_USER || 'root',
   password: process.env.MYSQL_PASSWORD || 'root',
   database: process.env.MYSQL_DB || 'modelo',
+  URL: process.env.DATABASE_URL
 };
