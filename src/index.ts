@@ -2,7 +2,10 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import { env_entorno } from "./env"; 
-import casoRoutes from "./api/caso/caso.routes"
+import casoRoutes from "./api/caso/caso.routes";
+import documentoRoutes from "./api/documento/documento.route";
+import oficinaRoutes from "./api/oficina/oficina.route";
+import usuarioRoutes from "./api/usuario/usuario.route";
 // import { conMysql } from "./DB/conexion";
 
 
@@ -29,6 +32,9 @@ app.use(express.static("upload"));
 
 //routes 
 app.use('/caso', casoRoutes)   
+app.use('/doc', documentoRoutes)   
+app.use('/oficina', oficinaRoutes)   
+app.use('/usuario', usuarioRoutes)   
 
 app.use(express.static("upload"));
 
