@@ -7,5 +7,6 @@ export const db = mysql.createPool({
     // user: env_entorno.user,
     // password: env_entorno.password,
     uri:env_entorno.URL,
+    
     // database: 'db_personal'
 });

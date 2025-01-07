@@ -9,7 +9,7 @@ import casoRoutes from "./api/caso/caso.routes"
 //server app
 const app = express();
 
-const port = env_entorno.PORT || 4000 ;
+const port = env_entorno.PORT ;
 app.listen(port, () => {
   console.log(`🔥  🚀  server runn port ➡️ ... ${port} 😃  ✔️`);
 });
